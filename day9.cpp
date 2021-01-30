@@ -10,7 +10,7 @@ int main(){
     string line;
     ifstream myfile ("C:\\Users\\RT\\Desktop\\advent.txt");
     ll i = 0;
-    set<ll> se;
+    set<ll> se;safasfasgsagas
     while (getline (myfile,line)){
         if(i < 25){
             se.insert(stoll(line));
@@ -21,7 +21,7 @@ int main(){
     for(ll i = 25; i < v.size(); ++i){
         ll truer = 0;
         for(auto x:se){
-            if(se.find(abs(v[i] - x)) != se.end()){
+            if(se.find(abs(v[i] - x)) != se.end()){sagasg
                 truer = 1;
                 break;
             }
@@ -34,12 +34,12 @@ int main(){
                 if(idk == v[i])continue;
                 else{
                     sum += v[i];
-                    if(sum > idk){
+                    if(sum > idk){sagsag
                         while(sum > idk){
                             sum -= v[last];
                             last++;
                         }
-                    }
+                    }g
                     if(sum == idk){
                         cout << *min_element(v.begin() + last, v.begin() + i) + *max_element(v.begin() + last, v.begin() + i) << endl;
                         return 0;
